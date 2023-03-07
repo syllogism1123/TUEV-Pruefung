@@ -25,6 +25,7 @@ class CarInspectionServiceTest {
 
     @Test
     void testCheckNumberOfTires() { //car 4
+
         assertEquals(4, carList.get(3).getNumberOfTires());
     }
 
@@ -44,7 +45,7 @@ class CarInspectionServiceTest {
         assertEquals(3, carList.get(1).getNumberOfDoors());
     }
 
-    @Test //car 1
+    @Test
     void testCheckCar() { //car 1
         assertTrue(service.checkCar(carList.get(0)));
     }
